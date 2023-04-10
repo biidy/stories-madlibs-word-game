@@ -29,21 +29,20 @@ background-image: url(../assets/img5.jpg);
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-style: italic;
 }*/
-#storie1,#back{
+#storie1,#back,#msgerror{
     display: none;
 
 }
+
 #storie1{
-   background-image: url(../assets/img3.JPG);
-    color:aliceblue;
+
+  background-color:gray/* url(../assets/img3.JPG);
+    color:aliceblue;*/
 }
 #gomad,#random,#clear,#back{
     margin: auto;
     width: 200px;
     height: 30px;
-   /* background-color: green;
-    color: red;
-    margin-top: 10%;*/
     border: 2px solid red;
     border-radius: 15px;
     font-size: medium;
@@ -78,30 +77,7 @@ background-image: url(../assets/img5.jpg);
 #rand{
     color:gray;
 }
-/*for the button stories
-#button{
-    width:400px;
-    margin: auto;
-}
-#str1,#str2{
-    width: 300px;
-    height: 150px;
-    border: 5px solid grey;
-    border-radius: 10px;
-    font-size: 2rem;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: bold;
-    color:green;
 
-}
-#str1{
-    background-image: url(../assets/img4.jpg);
-    margin-top: 10%;
-}
-#str2{
-    background-image: url(../assets/img1.webp);
-    margin-top: 20%;
-}*/
 /* for the inputs*/
 input{
     border: 3px solid green;
@@ -114,7 +90,17 @@ input:hover{
 }
 input:active{
     box-shadow: 5px 5px rgb(54, 9, 9);
-}  
+} 
+#inpt{
+    background-color:green;
+}
+.label{
+    color:rgb(54, 9, 9) ;
+    font-size: 1rem;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-color: wheat;
+} 
 @media all and (max-width:400px){
        #storie1{
         width: 200px;

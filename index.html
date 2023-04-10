@@ -16,54 +16,71 @@
             to randomly pick up the words
 
         </p>
+        <p id="msgerror"> </p>
     </div>
-   <!-- <div id="button">
-         <button id="str1" onclick="display('storie1')" >Park visit and the lemurs </button>
-         <button id="str2" onclick="display('storie2')" > African women  </button>
-
-    </div>-->
+   
     <div id="storie1">
         <h2 id="title1">Park visit and the lemurs</h2>
         <p>
-           <span class="adverb">Last saturday</span > ,me and my co-workers <span class='verb'>visited</span> a park.Our 
-            touristic guide was bringing us in a <span class="adjectif">wonderful</span> place,where
-            we saw a lot of <span class="noun">lemur</span>  ,he was explaining us the way of 
+           <span class="spn">Last saturday</span > ,me and my co-workers <span class="spn">visited</span> a park.Our 
+            touristic guide was bringing us in a <span class="spn">wonderful</span> place,where
+            we saw a lot of <span class="spn">lemur</span>  ,he was explaining us the way of 
             living of those animals: some of them goes out during the
-            day and some in the night,in general their food are the
-            fruit and leaf.<span class="adverb" >Suddenly </span>,what was surprising,one lemur
-            jumped on the shoulder of <span class="noun">my co-worker</span> ,because it smelled 
+           <span class="spn">day</span>  and some in the night,in general their food are the
+            fruit and leaf.<span class="spn" >Suddenly </span>,what was surprising,one lemur
+            jumped on the shoulder of <span class="spn">my co-worker</span> ,because it <span class="spn">smelled </span> 
             the banana smell in his backpack. 
         </p>
     </div>    
     <div id="tab">
-        <table>
+        <table >
             <tr><td rowspan="10"></td></tr>
             <tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr>
             </tr><tr></tr><tr></tr><tr></tr><tr></tr>
+           <div id="inpt">
             <tr>
-                 <td> <input type="text" placeholder="adverb"></td>
-                 <td> <input type="text" placeholder="verb"></td>
+                <td><label class="label">moment</label></td>
+                <td><label class="label">verb</label></td>
+            </tr>
+            <tr>
+                 <td  > <input  class="inputs" type="text" value=" "></td>
+                 <td> <input class="inputs" type="text" ></td>
             </tr> 
+           
+         </div> 
             <tr><td rowspan="10"></td></tr>
             <tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr>
             </tr><tr></tr><tr></tr><tr></tr><tr></tr>
             <tr>
-                 <td> <input type="text" placeholder="adjectif"></td> 
-                 <td> <input type="text" placeholder="noun"></td>
+                <td><label class="label">adjectif</label></td>
+                <td><label class="label">noun</label></td>
+            </tr>
+            <tr>
+                 <td> <input class="inputs"type="text"></td> 
+                 <td> <input class="inputs" type="text"></td>
             </tr> 
+
             <tr><td rowspan="10"></td></tr>
             <tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr>
             </tr><tr></tr><tr></tr><tr></tr><tr></tr>
             <tr>
-                <td><input type="text" placeholder="adverb"></td> 
-                <td> <input type="text" placeholder="noun"></td>
+                <td><label class="label">noun</label></td>
+                <td><label class="label">adverb</label></td>
+            </tr>
+            <tr>
+                <td><input   class="inputs" type="text"></td> 
+                <td> <input class="inputs" type="text"></td>
             </tr>
             <tr><td rowspan="10"></td></tr>
             <tr></tr><tr></tr><tr></tr><tr></tr><tr></tr><tr>
             </tr><tr></tr><tr></tr><tr></tr><tr></tr>
             <tr>
-                <td><input type="text" placeholder="adverb"></td> 
-                <td> <input type="text" placeholder="noun"></td>
+                <td><label class="label">noun</label></td>
+                <td><label class="label">verb</label></td>
+            </tr>
+            <tr>
+                <td><input class="inputs" type="text"></td> 
+                <td> <input class="inputs" type="text"></td>
             </tr>
        </table>
     </div>  
@@ -74,13 +91,13 @@
        <tr><td> <button id="gomad" onclick="display('storie1')">GO MAD</button></td></tr>
        <tr><td rowspan="2"></td></tr>
        <tr></tr><tr></tr>
-        <tr><td> <button id="clear">CLEAR</button></td></tr>
+        <tr><td> <button id="clear" >CLEAR</button></td></tr>
         <tr><td rowspan="2"></td></tr>
        <tr></tr><tr></tr>
-       <tr><td> <button id="random">RANDOM</button></td></tr>
+       <tr><td> <button id="random" >RANDOM</button></td></tr>
        <tr><td rowspan="2"></td></tr>
        <tr></tr><tr></tr>
-       <tr><td> <button id="back"  onclick="back('storie1')">BACK</button></td></tr>
+       <tr><td> <button id="back"  onclick="backstr('storie1')">BACK</button></td></tr>
 
 </table> 
 </div> 
