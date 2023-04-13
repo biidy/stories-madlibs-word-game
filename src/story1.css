@@ -118,7 +118,7 @@ input:active{
    }
    #back,#gomad,#random,#clear{
     width: 100px;
-   margin-right:auto;
+   margin-left: 33%;
    }
    #guide{
     width: 250px;

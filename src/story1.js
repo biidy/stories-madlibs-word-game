@@ -2,7 +2,7 @@
     let oneinput = document.getElementsByClassName("inputs");
  let spn =document.getElementsByClassName("spn");
  /*for the error message*/
-  let errormsg =document.getElementById('msgerror');
+  let errormsg = document.getElementById('msgerror');
  
 
     /*the buttons*/
@@ -12,33 +12,53 @@
   const back= document.getElementById('back');
   /*function verify the inputs if they are full or not */
   function verify (){
-  let cnt = 0;
-  for(let i=0;i<oneinput.length;i++){
-    
-      if(oneinput[i].value!= ' '||'' ||null){
-        cnt++
-       
-      }
-       
+   let cnt = 0;
+   for(let i=0;i<oneinput.length;i++){
+     
+       if(oneinput[i].value!= ' '||''){
+         cnt++;
         
-    else{
-      errormsg.style.display='block';
-      errormsg.innerText='please fill all the field!';
-      errormsg.style.color='orangered';
-    }
+       }
         
-  }
-  return cnt;
-  
-}
+         
+     else{
+       errormsg.style.display='block';
+       errormsg.innerText='please fill all the field!';
+       errormsg.style.color='orangered';
+     }
+         
+   }
+   return cnt;
+   
+ }
 
 /*here we will go to make the button gomad to be clicked*/
-function display( storie){
-  if((verify()==8) &&( wrdvulgar()==true))
+function display ( storie){
+ /* let inputPromises=[];
+  for (const elem of oneinput){
+    let elemval=elem.value;
+    if (elemval){
+      for (const vulgar of badWords){
+         if(elemval.toLowerCase().trim()==vulgar){
+          elem.value="";
+          elem.setAttribute("placeholder","no vulgar");
+          break;
+         }
+      }
+      inputPromises.push(Promise.resolve(elemval));
+    }
+    else{ elem.setAttribute("placeholder","word");
+    inputPromises.push(Promise.reject()); 
+  }
+  }*/
+
+if((verify()==8 )&& (wrdvulgar()==true))
+
    {
     let story1=document.getElementById(storie);
             story1.style.display='block';
-        back.style.display='block';       
+        back.style.display='block';   
+        back.style.marginLeft='28%';    
 
         gomad.style.display='none';
         random.style.display='none';    
@@ -50,10 +70,10 @@ function display( storie){
         tab.style.display='none';    
         for (let i=0;i<spn.length;i++){
           spn[i].innerText= oneinput[i].value;
-          spn[i].style.color='green';
-
-      errormsg.style.display='none';    
+          spn[i].style.color='tomato';
+         
        }
+       errormsg.style.display='none'; 
   }    
 }
 
@@ -541,7 +561,7 @@ const badWords = [
   let bad = true;
   for (let i = 0; i<oneinput.length; i++){
      for(let j=0;j<badWords.length;j++){
-        if((oneinput[i].value)==badWords[j]){
+        if((oneinput[i].value)==(badWords[j])){
           errormsg.style.display='block';
         errormsg.innerText='please add appropriate words in the text filds!';
         errormsg.style.color='orangered';
